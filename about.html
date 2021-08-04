@@ -1,0 +1,133 @@
+<button class="button"><a href= "index.html">Home</a></button>
+<style>
+.button {
+  background-color: #F0F8FF;
+  border: none;
+  color: #F0F8FF;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+</style>
+<div class="about-section">
+  </div>
+  <h2 style="text-align:center">About Us</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Prakhar" style="width:100%">
+      <div class="container">
+        <h2>Prakhar S</h2>
+        <p class="title">Admin of the Site</p>
+        <p>First of all ,Hey 👋 Alien Friend Welcome to my website.</p>
+        <h2>About Me</h2>
+        <p>I am Prakhar , I am a high school student and i made this site cause i
+was trying to code a space news site but was not able to
+so i coded it to get rss feed various sites.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #212121;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #212121;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<p align= "center">Copy our website url</p>
+<!-- The text field -->
+<p align="center"><input type="text" value="https://Nasa4.prakharswarnkar.repl.co" id="myInput"></p>
+
+<!-- The button used to copy the text -->
+<p align="center"><button onclick="myFunction()">Copy text</button></p>
+<script>
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+<style>
+body {
+  background-color:#F0F8FF;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
